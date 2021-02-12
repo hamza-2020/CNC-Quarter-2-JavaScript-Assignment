@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var name = prompt("Enter your Name : ");
+        var dobDate = prompt("Enter your Date of Birth Date : ");
+        var dobMonth = prompt("Enter your Date of Birth Month : ");
+        var dobYear = prompt("Enter your Date of Birth Year : ");
+        console.log("Hello ", name, "Good Morning , Good Evening , AfterNoon or Night ");
+        console.log("Your Date of Birth ", parseInt(dobDate), "/", parseInt(dobMonth), "/", parseInt(dobYear));
+        var date = new Date();
+        var get_year = date.getFullYear() - dobYear;
+        var get_month = date.getMonth() - dobMonth;
+        var get_date = date.getDate() - dobDate;
+
+        console.log("You are " , get_year ,"years" , get_month ," Month" ,  get_date ,"Days" );
+    </script>
+</body>
+
+</html>
