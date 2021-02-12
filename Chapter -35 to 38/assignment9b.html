@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function capitalize() {
+            var inputValue = "cloUd naTive computinG";
+            var input_Value = inputValue.charAt(0).toUpperCase();
+            var input_slice = inputValue.slice(1, 6).toLowerCase();
+            var input_Value1 = inputValue.charAt(6).toUpperCase();
+            var input_slice1 = inputValue.slice(7, 13).toLowerCase();
+            var input_Value2 = inputValue.charAt(13).toUpperCase();
+            var input_slice2 = inputValue.slice(14).toLowerCase();
+            var inputValue = input_Value + input_slice + input_Value1 + input_slice1 + input_Value2 + input_slice2;
+            alert(inputValue);
+            console.log(inputValue);
+        }
+        capitalize();
+    </script>
+</body>
+
+</html>
