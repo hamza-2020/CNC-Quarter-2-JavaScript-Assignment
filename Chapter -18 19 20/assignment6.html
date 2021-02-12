@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          var courses=[]
+          var i=0;
+          while(i<=4){
+            var course1=prompt("Enter your course : " );
+            courses.push(course1);
+            i++;
+          }
+          alert(courses);
+          var j=0;
+          while(j<=4){
+              alert(courses[j]);
+          j++;
+            }
+            while(i<=4){
+        var editcourse1Value=prompt("Enter your course : " );
+        courses.splice(0,courses.length,editcourse1Value);
+        
+        }
+        alert(courses);
+    </script>
+</body>
+</html>
