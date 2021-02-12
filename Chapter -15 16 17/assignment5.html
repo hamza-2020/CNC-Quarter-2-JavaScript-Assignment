@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var courses=[]
+        for(var i=0; i<=4; i++){
+        var course1=prompt("Enter your course : " );
+        courses.push(course1);
+        }
+        alert(courses);
+        for(var j=0; j<=4; j++){
+            alert(courses[j]);
+        }
+        for(var i=0; i<=4; i++){
+        var editcourse1Value=prompt("Enter your course : " );
+        courses.splice(0,courses.length,editcourse1Value);
+        
+        }
+        alert(courses);
+    </script>
+</body>
+</html>
